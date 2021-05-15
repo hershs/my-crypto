@@ -1,6 +1,6 @@
 while :
 do
-  is_stuck=`tail -n 20 /home/ubuntu/eth.log |grep "SIGSEGV encountered"`
+  is_stuck=`tail -n 20 /home/ubuntu/my_crypto/eth.log |grep "SIGSEGV encountered"`
   dt=`date +"%Y%m%d %H:%M:%S"`
   echo "$dt is_stuck=$is_stuck"
   if [[ ! -z $is_stuck ]]
